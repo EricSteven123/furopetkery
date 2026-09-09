@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms & Conditions — Furopetkery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#C4D3DC;
+    --blue-deep:#9FB4C2;
+    --cream:#FEF6D9;
+    --pink:#EFC3C4;
+    --pink-deep:#E3A4A6;
+    --ink:#3E3630;
+    --white:#FFFEF9;
+    --radius-lg:28px;
+    --radius-md:16px;
+    --radius-sm:10px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Karla', sans-serif;
+    -webkit-font-smoothing:antialiased;
+    padding-bottom:64px;
+  }
+  a{color:inherit;}
+  img,svg{display:block;}
+  button{font-family:inherit;cursor:pointer;}
+  ::selection{background:var(--pink);color:var(--ink);}
+
+  /* ---------- Top bar (same as main site) ---------- */
+  .topbar{
+    display:flex;align-items:center;gap:24px;
+    padding:18px 28px;background:var(--white);
+    border-bottom:1px solid rgba(62,54,48,0.08);
+    position:sticky;top:0;z-index:50;
+  }
+  .logo{
+    font-family:'Fraunces', serif;font-style:italic;font-weight:600;
+    font-size:28px;letter-spacing:0.3px;color:var(--ink);
+    white-space:nowrap;text-decoration:none;
+  }
+  .top-actions{margin-left:auto;display:flex;align-items:center;gap:18px;font-size:14px;font-weight:600;}
+  .signin-link{text-decoration:none;}
+  .back-pill{
+    display:flex;align-items:center;gap:6px;background:var(--pink);
+    padding:9px 16px;border-radius:999px;border:none;color:var(--ink);
+    font-weight:600;font-size:14px;text-decoration:none;
+  }
+
+  /* ---------- Legal page layout ---------- */
+  .legal-hero{
+    max-width:900px;margin:36px auto 0;padding:0 24px;
+  }
+  .legal-eyebrow{
+    font-size:13px;font-weight:600;letter-spacing:0.4px;background:var(--blue);color:var(--ink);
+    display:inline-flex;padding:6px 14px;border-radius:999px;margin-bottom:16px;
+  }
+  .legal-title{
+    font-family:'Fraunces', serif;font-weight:600;font-size:42px;line-height:1.08;margin:0 0 10px;
+  }
+  .legal-updated{font-size:13.5px;color:#7a6f66;margin:0 0 28px;}
+
+  .legal-wrap{
+    max-width:900px;margin:0 auto;padding:0 24px 60px;
+    display:grid;grid-template-columns:220px 1fr;gap:32px;align-items:start;
+  }
+  .toc-card{
+    background:var(--white);border:1px solid rgba(62,54,48,0.08);border-radius:var(--radius-md);
+    padding:18px;position:sticky;top:92px;
+  }
+  .toc-card h4{margin:0 0 12px;font-size:13px;letter-spacing:.3px;}
+  .toc-card ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px;max-height:60vh;overflow-y:auto;}
+  .toc-card li a{
+    display:block;padding:6px 8px;border-radius:var(--radius-sm);font-size:12.5px;line-height:1.4;
+    text-decoration:none;color:#5a5048;
+  }
+  .toc-card li a:hover{background:var(--cream);color:var(--ink);}
+
+  .legal-content{
+    background:var(--white);border:1px solid rgba(62,54,48,0.08);border-radius:var(--radius-lg);
+    padding:40px 44px;
+  }
+  .legal-content p{font-size:14.5px;line-height:1.7;margin:0 0 16px;color:#3e3630;}
+  .legal-content h2{
+    font-family:'Fraunces', serif;font-weight:600;font-size:20px;
+    margin:32px 0 12px;padding-top:20px;border-top:1px solid rgba(62,54,48,0.08);
+    scroll-margin-top:90px;
+  }
+  .legal-content h2:first-child{margin-top:0;padding-top:0;border-top:none;}
+  .legal-content h2 strong{font-weight:600;}
+  .legal-content ul{margin:0 0 16px;padding-left:22px;}
+  .legal-content li{font-size:14.5px;line-height:1.7;margin-bottom:6px;color:#3e3630;}
+  .legal-content strong{font-weight:700;}
+  .fill-in{
+    background:var(--pink);color:var(--ink);padding:1px 6px;border-radius:6px;
+    font-style:normal;font-weight:700;
+  }
+  .legal-footer-note{
+    margin-top:30px;padding-top:20px;border-top:1px solid rgba(62,54,48,0.08);
+    font-size:13px;color:#7a6f66;
+  }
+
+  /* ---------- Footer (same as main site) ---------- */
+  footer{margin-top:20px;background:var(--ink);color:var(--cream);padding:48px 24px 24px;}
+  .footer-inner{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:30px;}
+  .footer-inner .logo{color:var(--cream);}
+  .footer-tag{font-size:13px;opacity:0.75;margin-top:10px;max-width:260px;line-height:1.5;}
+  footer h5{font-size:12.5px;letter-spacing:.3px;margin:0 0 14px;opacity:0.85;}
+  footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;font-size:13px;}
+  footer ul a{text-decoration:none;opacity:0.85;}
+  footer ul a:hover{opacity:1;text-decoration:underline;}
+  .delivery-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px;}
+  .delivery-chips span{background:rgba(254,246,217,0.1);border:1px solid rgba(254,246,217,0.25);padding:5px 11px;border-radius:999px;font-size:11.5px;}
+  .footer-bottom{max-width:1320px;margin:34px auto 0;padding-top:18px;border-top:1px solid rgba(254,246,217,0.15);font-size:12px;opacity:0.6;text-align:center;}
+
+  /* ---------- Mobile bottom nav (same as main site) ---------- */
+  .mobile-nav{
+    position:fixed;bottom:0;left:0;right:0;background:var(--white);border-top:1px solid rgba(62,54,48,0.1);
+    display:flex;justify-content:space-around;padding:8px 4px 10px;z-index:60;
+  }
+  .mobile-nav a{
+    background:none;border:none;display:flex;flex-direction:column;align-items:center;gap:3px;
+    font-size:10.5px;font-weight:600;color:var(--ink);opacity:0.55;text-decoration:none;
+  }
+  .mobile-nav a.active{opacity:1;}
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 860px){
+    .legal-wrap{grid-template-columns:1fr;}
+    .toc-card{position:static;}
+    .toc-card ul{max-height:none;}
+    .legal-content{padding:28px 22px;}
+  }
+  @media (max-width: 560px){
+    .topbar{gap:12px;padding:14px 16px;}
+    .logo{font-size:22px;}
+    .top-actions span.signin-link{display:none;}
+    .legal-title{font-size:30px;}
+  }
+</style>
+
+<!-- Vercel Web Analytics -->
+<script>
+    window.va = window.va || function () {
+        (window.vaq = window.vaq || []).push(arguments);
+    };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+<!-- Top bar -->
+<div class="topbar">
+  <a class="logo" href="index.html">Furopetkery</a>
+  <div class="top-actions">
+    <a class="signin-link" href="#"><span class="signin-link">Sign in</span></a>
+    <a class="back-pill" href="index.html">🛍 Back to shop</a>
+  </div>
+</div>
+
+<!-- Legal hero -->
+<div class="legal-hero">
+  <span class="legal-eyebrow">Legal</span>
+  <h1 class="legal-title">Terms &amp; Conditions</h1>
+  <p class="legal-updated">Last updated: 9th September 2026</p>
+</div>
+
+<div class="legal-wrap">
+  <aside class="toc-card">
+    <h4>≡ On this page</h4>
+    <ul>
+      <li><a href="#about-our-website">1. About Our Website</a></li>
+<li><a href="#eligibility">2. Eligibility</a></li>
+<li><a href="#product-information">3. Product Information</a></li>
+<li><a href="#pet-food-and-product-disclaimer">4. Pet Food and Product Disclaimer</a></li>
+<li><a href="#orders">5. Orders</a></li>
+<li><a href="#product-availability">6. Product Availability</a></li>
+<li><a href="#prices">7. Prices</a></li>
+<li><a href="#promotions-and-discounts">8. Promotions and Discounts</a></li>
+<li><a href="#payment">9. Payment</a></li>
+<li><a href="#shipping-and-delivery">10. Shipping and Delivery</a></li>
+<li><a href="#delivery-of-pet-food">11. Delivery of Pet Food</a></li>
+<li><a href="#returns-and-refunds">12. Returns and Refunds</a></li>
+<li><a href="#product-expiry-and-storage">13. Product Expiry and Storage</a></li>
+<li><a href="#user-accounts">14. User Accounts</a></li>
+<li><a href="#user-reviews-and-content">15. User Reviews and Content</a></li>
+<li><a href="#intellectual-property">16. Intellectual Property</a></li>
+<li><a href="#third-party-websites-and-services">17. Third-Party Websites and Services</a></li>
+<li><a href="#marketing-communications">18. Marketing Communications</a></li>
+<li><a href="#prohibited-activities">19. Prohibited Activities</a></li>
+<li><a href="#disclaimer">20. Disclaimer</a></li>
+<li><a href="#limitation-of-liability">21. Limitation of Liability</a></li>
+<li><a href="#indemnification">22. Indemnification</a></li>
+<li><a href="#privacy">23. Privacy</a></li>
+<li><a href="#changes-to-these-terms">24. Changes to These Terms</a></li>
+<li><a href="#force-majeure">25. Force Majeure</a></li>
+<li><a href="#governing-law">26. Governing Law</a></li>
+<li><a href="#severability">27. Severability</a></li>
+<li><a href="#entire-agreement">28. Entire Agreement</a></li>
+<li><a href="#contact-us">29. Contact Us</a></li>
+    </ul>
+  </aside>
+
+  <article class="legal-content">
+    <p>Welcome to <strong>Furopetkery</strong>. These Terms &amp; Conditions govern your use of our website, <strong>furopetkery.vercel.app</strong>, and any purchase of products made through the Website.</p>
+<p>By accessing or using the Website, you agree to be bound by these Terms. If you do not agree with any part of these Terms, please do not use the Website.</p>
+<h2 id="about-our-website"><strong>1. About Our Website</strong></h2>
+<p>Furopetkery operates an online platform for the marketing and/or sale of pet food, pet treats, pet supplements, and other pet-related products.</p>
+<p>We reserve the right to modify, suspend, or discontinue any part of the Website or its services at any time without prior notice.</p>
+<h2 id="eligibility"><strong>2. Eligibility</strong></h2>
+<p>You must be at least <strong>18 years old</strong>, or the legal age required in your jurisdiction, to make purchases through the Website.</p>
+<p>By using the Website, you confirm that:</p>
+<ul>
+<li>The information you provide is accurate and complete.</li>
+<li>You have the legal capacity to enter into a binding agreement.</li>
+<li>You will use the Website only for lawful purposes.</li>
+<li>You will not misuse, interfere with, or attempt to gain unauthorized access to the Website.</li>
+</ul>
+<h2 id="product-information"><strong>3. Product Information</strong></h2>
+<p>We make reasonable efforts to ensure that Product descriptions, photographs, ingredients, nutritional information, sizes, prices, and other information displayed on the Website are accurate and up to date.</p>
+<p>However:</p>
+<ul>
+<li>Product packaging and labeling may differ from photographs displayed on the Website.</li>
+<li>Manufacturers may change ingredients, packaging, nutritional information, or product specifications.</li>
+<li>Product colors and photographs may appear differently depending on your device.</li>
+<li>We do not guarantee that all information displayed on the Website is completely error-free.</li>
+</ul>
+<p>Customers should always check the <strong>actual product packaging and manufacturer's labeling</strong> before giving a product to their pet.</p>
+<h2 id="pet-food-and-product-disclaimer"><strong>4. Pet Food and Product Disclaimer</strong></h2>
+<p>Our Products are intended for use as described by the relevant manufacturer.</p>
+<p>You are responsible for determining whether a Product is appropriate for your pet, taking into consideration factors such as:</p>
+<ul>
+<li>Species and breed</li>
+<li>Age</li>
+<li>Size and weight</li>
+<li>Allergies or food sensitivities</li>
+<li>Existing dietary requirements</li>
+<li>Medical conditions</li>
+<li>Veterinary recommendations</li>
+</ul>
+<p>If your pet has a medical condition, allergy, special dietary requirement, or other health concern, you should consult a qualified veterinarian before introducing a new food, treat, or supplement.</p>
+<p>Unless expressly stated otherwise, Products sold through the Website are <strong>not intended to diagnose, treat, cure, or prevent any disease or medical condition</strong>.</p>
+<p>We are not responsible for adverse reactions, allergic reactions, illness, injury, or other consequences resulting from the use of a Product where such consequences arise from factors outside our reasonable control or from failure to follow the manufacturer's instructions.</p>
+<h2 id="orders"><strong>5. Orders</strong></h2>
+<p>When you place an order through the Website, you are making an offer to purchase the selected Products.</p>
+<p>After submitting an order, you may receive an order confirmation. An order confirmation does not necessarily mean that your order has been accepted.</p>
+<p>We reserve the right to:</p>
+<ul>
+<li>Accept or reject an order.</li>
+<li>Cancel an order.</li>
+<li>Limit the quantity of Products purchased.</li>
+<li>Correct pricing or Product information errors.</li>
+<li>Refuse an order where fraud or unauthorized activity is suspected.</li>
+</ul>
+<p>If we cancel an order after payment has been made, we will provide an appropriate refund in accordance with our Refund Policy and applicable law.</p>
+<h2 id="product-availability"><strong>6. Product Availability</strong></h2>
+<p>All Products are subject to availability.</p>
+<p>If a Product becomes unavailable after you place an order, we may contact you regarding an alternative Product or provide a refund for the unavailable item.</p>
+<p>We are not responsible for delays caused by manufacturers, suppliers, logistics providers, or circumstances beyond our reasonable control.</p>
+<h2 id="prices"><strong>7. Prices</strong></h2>
+<p>All prices displayed on the Website are stated in <strong>Indonesian Rupiah (IDR)</strong>, unless otherwise specified.</p>
+<p>Prices may change at any time without prior notice.</p>
+<p>Unless otherwise stated, prices may not include:</p>
+<ul>
+<li>Delivery or shipping charges</li>
+<li>Applicable taxes</li>
+<li>Customs duties</li>
+<li>Import charges</li>
+<li>Other government-imposed fees</li>
+</ul>
+<p>The final amount payable will be displayed during checkout where applicable.</p>
+<h2 id="promotions-and-discounts"><strong>8. Promotions and Discounts</strong></h2>
+<p>From time to time, we may offer promotional codes, discounts, vouchers, bundles, or other promotional offers.</p>
+<p>Unless otherwise stated:</p>
+<ul>
+<li>Promotions cannot be exchanged for cash.</li>
+<li>Promotional codes may have expiration dates.</li>
+<li>Only one promotional code may be used per transaction.</li>
+<li>Promotions may be subject to minimum purchase requirements.</li>
+<li>We reserve the right to withdraw or modify promotions at any time.</li>
+</ul>
+<p>Additional terms may apply to individual promotions.</p>
+<h2 id="payment"><strong>9. Payment</strong></h2>
+<p>We may offer various payment methods through third-party payment providers.</p>
+<p>By submitting payment information, you confirm that you are authorized to use the selected payment method.</p>
+<p>We do not knowingly store complete payment-card information unless specifically stated in our Privacy Policy and permitted by applicable law.</p>
+<p>Payment processing may be subject to the terms and privacy policies of the relevant payment provider.</p>
+<h2 id="shipping-and-delivery"><strong>10. Shipping and Delivery</strong></h2>
+<p>We will make reasonable efforts to deliver Products within the estimated delivery period displayed during checkout.</p>
+<p>However, delivery times are estimates and are not guaranteed unless expressly stated otherwise.</p>
+<p>Delivery may be affected by:</p>
+<ul>
+<li>Incorrect or incomplete delivery information</li>
+<li>Weather conditions</li>
+<li>Public holidays</li>
+<li>Customs procedures</li>
+<li>Courier or logistics delays</li>
+<li>Supplier delays</li>
+<li>Natural disasters</li>
+<li>Government restrictions</li>
+<li>Other circumstances beyond our reasonable control</li>
+</ul>
+<p>You are responsible for providing an accurate delivery address and contact information.</p>
+<h2 id="delivery-of-pet-food"><strong>11. Delivery of Pet Food</strong></h2>
+<p>Customers should inspect delivered pet food and related Products as soon as reasonably possible.</p>
+<p>If a package appears damaged, opened, leaking, contaminated, or otherwise compromised, you should contact us promptly and provide photographs or other relevant evidence where requested.</p>
+<p>Where applicable, we may require the affected Product to be retained for inspection or investigation.</p>
+<h2 id="returns-and-refunds"><strong>12. Returns and Refunds</strong></h2>
+<p>Returns and refunds are subject to our <strong>Refund &amp; Returns Policy</strong> and applicable consumer protection laws.</p>
+<p>For health, safety, and hygiene reasons, opened pet food, treats, supplements, or other consumable Products may not be eligible for return unless the Product is defective, damaged, incorrectly supplied, or otherwise required to be accepted under applicable law.</p>
+<p>If you receive:</p>
+<ul>
+<li>The wrong Product;</li>
+<li>A damaged Product;</li>
+<li>A defective Product; or</li>
+<li>A Product that is materially different from what you ordered,</li>
+</ul>
+<p>please contact us at <strong><span class="fill-in">https://msha.ke/furopetkery</span></strong></p>
+<p>We may request photographs, order details, batch information, or other information necessary to investigate the issue.</p>
+<h2 id="product-expiry-and-storage"><strong>13. Product Expiry and Storage</strong></h2>
+<p>Customers are responsible for following the storage instructions provided by the Product manufacturer.</p>
+<p>Pet food and related Products should be stored according to the manufacturer's instructions and used before the stated expiry or best-before date, where applicable.</p>
+<p>We are not responsible for deterioration caused by improper storage, handling, exposure to unsuitable temperatures, moisture, contamination, or failure to follow Product instructions after delivery.</p>
+<h2 id="user-accounts"><strong>14. User Accounts</strong></h2>
+<p>Certain features of the Website may require you to create an account.</p>
+<p>You are responsible for:</p>
+<ul>
+<li>Keeping your login information confidential.</li>
+<li>Providing accurate account information.</li>
+<li>Maintaining the security of your account.</li>
+<li>Not allowing unauthorized persons to use your account.</li>
+</ul>
+<p>You must notify us promptly if you believe your account has been accessed without authorization.</p>
+<p>We reserve the right to suspend or terminate accounts that violate these Terms or applicable laws.</p>
+<h2 id="user-reviews-and-content"><strong>15. User Reviews and Content</strong></h2>
+<p>If the Website allows users to submit reviews, comments, photographs, ratings, or other content ("User Content"), you agree that:</p>
+<ul>
+<li>Your User Content must be truthful and based on your genuine experience.</li>
+<li>You must not submit unlawful, misleading, defamatory, abusive, or fraudulent content.</li>
+<li>You must not submit content that infringes another person's intellectual property or privacy rights.</li>
+<li>You must not use reviews to promote competing businesses or products without authorization.</li>
+</ul>
+<p>By submitting User Content, you grant us a non-exclusive, worldwide, royalty-free license to use, reproduce, display, and distribute that content in connection with our business and marketing activities, subject to applicable law.</p>
+<p>We reserve the right to remove User Content that violates these Terms or applicable law.</p>
+<h2 id="intellectual-property"><strong>16. Intellectual Property</strong></h2>
+<p>All content on the Website, including but not limited to:</p>
+<ul>
+<li>Logos</li>
+<li>Trademarks</li>
+<li>Product descriptions</li>
+<li>Photographs</li>
+<li>Graphics</li>
+<li>Website design</li>
+<li>Text</li>
+<li>Videos</li>
+<li>Software</li>
+<li>Marketing materials</li>
+</ul>
+<p>is owned by or licensed to <strong>Furopetkery</strong>, unless otherwise stated.</p>
+<p>You may not reproduce, modify, distribute, sell, publish, or commercially exploit Website content without our prior written permission.</p>
+<h2 id="third-party-websites-and-services"><strong>17. Third-Party Websites and Services</strong></h2>
+<p>The Website may contain links to third-party websites, payment providers, delivery services, social-media platforms, or other external services.</p>
+<p>We are not responsible for the availability, content, security, privacy practices, or accuracy of third-party websites or services.</p>
+<p>Your use of third-party services may be subject to separate terms and conditions.</p>
+<h2 id="marketing-communications"><strong>18. Marketing Communications</strong></h2>
+<p>If you choose to subscribe to our marketing communications, you may receive information regarding:</p>
+<ul>
+<li>New Products</li>
+<li>Promotions</li>
+<li>Discounts</li>
+<li>Special offers</li>
+<li>Pet-related information</li>
+<li>Company announcements</li>
+</ul>
+<p>You may unsubscribe from marketing communications at any time by following the unsubscribe instructions provided in the communication or contacting us.</p>
+<h2 id="prohibited-activities"><strong>19. Prohibited Activities</strong></h2>
+<p>You must not use the Website to:</p>
+<ul>
+<li>Commit or facilitate unlawful activities.</li>
+<li>Attempt to gain unauthorized access to the Website or its systems.</li>
+<li>Introduce viruses, malware, or other harmful code.</li>
+<li>Interfere with Website operations.</li>
+<li>Scrape or collect Website information without authorization.</li>
+<li>Impersonate another person or business.</li>
+<li>Submit fraudulent orders.</li>
+<li>Abuse promotional offers.</li>
+<li>Use stolen or unauthorized payment information.</li>
+<li>Engage in activities that may damage our business or reputation.</li>
+</ul>
+<h2 id="disclaimer"><strong>20. Disclaimer</strong></h2>
+<p>To the maximum extent permitted by applicable law, the Website and its content are provided on an "as available" basis.</p>
+<p>We do not guarantee that:</p>
+<ul>
+<li>The Website will always be available.</li>
+<li>The Website will be free from errors.</li>
+<li>Product information will always be completely accurate.</li>
+<li>Products will be suitable for every pet.</li>
+<li>The Website will be free from viruses or other harmful components.</li>
+</ul>
+<p>Nothing in these Terms excludes or limits any rights or protections that cannot legally be excluded or limited under applicable law.</p>
+<h2 id="limitation-of-liability"><strong>21. Limitation of Liability</strong></h2>
+<p>To the maximum extent permitted by applicable law, <strong>Furopetkery</strong> will not be liable for indirect, incidental, special, consequential, or punitive losses arising from your use of the Website or Products.</p>
+<p>Nothing in these Terms limits liability where such limitation is prohibited by applicable law, including liability that cannot legally be excluded or limited.</p>
+<h2 id="indemnification"><strong>22. Indemnification</strong></h2>
+<p>To the extent permitted by applicable law, you agree to indemnify and hold harmless <strong>Furopetkery</strong>, its employees, directors, officers, affiliates, and service providers from claims, losses, liabilities, damages, and expenses arising from:</p>
+<ul>
+<li>Your violation of these Terms.</li>
+<li>Your unlawful use of the Website.</li>
+<li>Your misuse of Products.</li>
+<li>Your infringement of another person's rights.</li>
+<li>Your User Content.</li>
+</ul>
+<h2 id="privacy"><strong>23. Privacy</strong></h2>
+<p>Your use of the Website is also subject to our <strong>Privacy Policy</strong>, which explains how we collect, use, store, and protect personal information.</p>
+<p>Please review our Privacy Policy before using the Website or submitting personal information.</p>
+<h2 id="changes-to-these-terms"><strong>24. Changes to These Terms</strong></h2>
+<p>We may update these Terms from time to time.</p>
+<p>When changes are made, the updated version will be published on this page together with a revised "Last Updated" date.</p>
+<p>Your continued use of the Website after changes are published constitutes acceptance of the updated Terms, to the extent permitted by applicable law.</p>
+<h2 id="force-majeure"><strong>25. Force Majeure</strong></h2>
+<p>We will not be responsible for failure or delay in performing our obligations where the failure or delay results from circumstances beyond our reasonable control, including:</p>
+<ul>
+<li>Natural disasters</li>
+<li>Floods</li>
+<li>Fires</li>
+<li>Epidemics or pandemics</li>
+<li>War</li>
+<li>Terrorism</li>
+<li>Government restrictions</li>
+<li>Strikes</li>
+<li>Transportation disruptions</li>
+<li>Internet or telecommunications failures</li>
+<li>Supplier or manufacturer disruptions</li>
+</ul>
+<h2 id="governing-law"><strong>26. Governing Law</strong></h2>
+<p>These Terms shall be governed by and interpreted in accordance with the laws of <strong>Indonesia</strong>, without regard to its conflict-of-law principles.</p>
+<p>Any dispute arising from these Terms shall be subject to the jurisdiction of the courts of <strong>Republic of Indonesia(NKRI)</strong>, unless applicable consumer protection laws provide otherwise.</p>
+<h2 id="severability"><strong>27. Severability</strong></h2>
+<p>If any provision of these Terms is determined to be invalid, unlawful, or unenforceable, the remaining provisions will continue to remain in full force and effect.</p>
+<h2 id="entire-agreement"><strong>28. Entire Agreement</strong></h2>
+<p>These Terms, together with our Privacy Policy, Refund &amp; Returns Policy, Shipping Policy, and any other policies expressly incorporated into these Terms, constitute the entire agreement between you and <strong>Furopetkery</strong> regarding your use of the Website.</p>
+<h2 id="contact-us"><strong>29. Contact Us</strong></h2>
+<p>If you have questions regarding these Terms, please contact us:</p>
+<p><strong>Furopetkery</strong><br />
+<strong>Contacts: http://msha.ke/furopetkery</strong></p>
+<p><strong>Last Updated:</strong> 9th September 2026</p>
+
+    <!-- <p class="legal-footer-note">Sections highlighted in pink (like <span class="fill-in">this</span>) are placeholders from the original template that still need real details filled in before this page goes live.</p> -->
+  </article>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="index.html">Furopetkery</a>
+      <p class="footer-tag">Home-baked and hand-made treats — savory bites, custom celebration cakes, and small-batch sweets, made to order.</p>
+    </div>
+    <div>
+      <h5>Menu</h5>
+      <ul><li><a href="index.html">Home</a></li><li><a href="index.html">Cart</a></li><li><a href="index.html">Support</a></li></ul>
+    </div>
+    <div>
+      <h5>Information</h5>
+      <ul><li><a href="terms.html">Terms &amp; Conditions</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Returns &amp; Refunds</a></li><li><a href="#">Delivery Policy</a></li></ul>
+    </div>
+    <div>
+      <h5>Delivery partners</h5>
+      <div class="delivery-chips">
+        <span>Deliveree</span><span>J&amp;T Cargo</span><span>JNE</span><span>GoSend</span><span>J&amp;T Express</span><span>Sentral Cargo</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">Copyright © Furopetkery — demo storefront</div>
+</footer>
+
+<div class="mobile-nav">
+  <a class="active" href="index.html">🏠<span>Home</span></a>
+  <a href="index.html">🛒<span>Cart</span></a>
+  <a href="index.html#site-footer">💬<span>Support</span></a>
+</div>
+
+</body>
+</html>
